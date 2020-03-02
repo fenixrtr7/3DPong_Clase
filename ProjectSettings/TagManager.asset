@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Izquierdo
   - Derecho
+  - Ball
   layers:
   - Default
   - TransparentFX
