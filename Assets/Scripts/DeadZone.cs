@@ -16,7 +16,7 @@ public class DeadZone : MonoBehaviour
     //public AudioSource deadAudio;
 
     private void Awake() {
-        //sceneChanger = FindObjectOfType<SceneChanger>();
+        sceneChanger = FindObjectOfType<SceneChanger>();
     }
 
     private void OnTriggerEnter(Collider ball)

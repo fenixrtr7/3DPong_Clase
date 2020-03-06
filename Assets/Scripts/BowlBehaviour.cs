@@ -9,7 +9,7 @@ public class BowlBehaviour : MonoBehaviour {
     Rigidbody rbBall;
     float posDif = 0;
 
-    //public AudioSource ballAudio;
+    public AudioSource ballAudio;
 	// Use this for initialization
 	void Start () {
         posDif = paddle.position.x - transform.position.x;
@@ -31,8 +31,8 @@ public class BowlBehaviour : MonoBehaviour {
             }     
         }
 	}
-    // private void OnCollisionEnter2D(Collision2D collision)
-    // {
-    //     ballAudio.Play();
-    // }
+     private void OnCollisionEnter(Collision collision)
+     {
+         ballAudio.Play();
+     }
 }
